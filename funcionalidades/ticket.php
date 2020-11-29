@@ -4,6 +4,8 @@
     function alterarTicket() {
         global $conexao;
 
+        session_start();
+
         $dataInicio = str_replace("/", "-", $_POST['dataInicio']);
         $dataInicio = str_replace(" ", "", $dataInicio);
         $dataIncio = date("Y-m-d", strtotime($dataInicio));
@@ -13,7 +15,7 @@
         $email = $_POST['email'];
         $titulo = $_POST['titulo'];
         $solicitacao = $_POST['solicitacao'];
-        $usuario = $_POST['usuario']; $usuario = 1;
+        $usuario = $_SESSION['usuarioId'];
         $status = $_POST['status'];
         $id = $_GET['id'];
 
@@ -31,6 +33,7 @@
 
     function novoTicket() {
         global $conexao;
+        session_start();
 
         $dataInicio = str_replace("/", "-", $_POST['dataInicio']);
         $dataInicio = str_replace(" ", "", $dataInicio);
@@ -41,7 +44,7 @@
         $email = $_POST['email'];
         $titulo = $_POST['titulo'];
         $solicitacao = $_POST['solicitacao'];
-        $usuario = $_POST['usuario']; $usuario = 1;
+        $usuario = $_SESSION['usuarioId'];
         $status = $_POST['status'];
 
         $sql = "INSERT INTO ticket (`dataInicio` , `nomeContato`,`telefone`,`email`,`titulo`,`solicitacao`,`usuario`,`status`) VALUES ('$dataIncio','$nomeContato','$telefone','$email','$titulo','$solicitacao','$usuario','$status')";

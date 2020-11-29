@@ -2,13 +2,29 @@
      google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawStuff);
 
+//SELECT `ticket`.`usuario`, `usuario`.nome ,COUNT(*) as 'contagem' FROM `ticket` join `usuario` on `ticket`.`usuario`=`usuario`.`id` GROUP BY `ticket`.`usuario`
+
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
           ['Funcionários', 'Chamados'],
-          ["Funcionario 2", 31],
-          ["Funcionario 1", 90],
-          ["Funcionario 2", 31],
+          <?php
+        // SELECT `status`,COUNT(*) as 'contagem' FROM `ticket` GROUP BY `status`
+        global $conexao;
 
+        $nome = $_GET['nome'];
+
+        $sql = "SELECT `ticket`.`usuario`, `usuario`.nome ,COUNT(*) as 'contagem' FROM `ticket` join `usuario` on `ticket`.`usuario`=`usuario`.`id` GROUP BY `ticket`.`usuario`";
+        $result = $conexao->query($sql);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $nome = $row['nome'];
+                $contagem = $row['contagem'];
+                echo "['$nome', $contagem],";
+            }
+        }    
+        ?>
         ]);
 
         var options = {

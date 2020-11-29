@@ -16,8 +16,28 @@ function drawChart() {
   data.addColumn('string', 'Topping');
   data.addColumn('number', 'Slices');
   data.addRows([
-    ['Abertos', 3],
-    ['Fechados', 1]
+    <?php
+        // SELECT `status`,COUNT(*) as 'contagem' FROM `ticket` GROUP BY `status`
+        global $conexao;
+
+        $nome = $_GET['nome'];
+
+        $sql = "SELECT `status`,COUNT(*) as 'contagem' FROM `ticket` GROUP BY `status`";
+        $result = $conexao->query($sql);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                if($row['status'] == 1) {
+                    $contagem = $row['contagem'];
+                    echo "['abertos', $contagem],";
+                } else {
+                    $contagem = $row['contagem'];
+                    echo "['fechados', $contagem],";
+                }
+            }
+        }    
+    ?>
   ]);
 
   // Set chart options
