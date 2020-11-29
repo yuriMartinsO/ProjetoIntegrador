@@ -4,7 +4,7 @@
 ?>
 <html>
     <head>
-        <title>Cadastrar um Usuário</title>
+        <title>Cadastrar um Novo Usuário</title>
         
         <script>
             var msg = "<?=$_SESSION['msg']?>";
