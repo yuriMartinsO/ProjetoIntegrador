@@ -4,7 +4,7 @@
 ?>
 <html>
     <head>
-        <title>Cadastrar um Novo Usuário</title>
+        <title>Cadastrar Um Usuário</title>
         
         <script>
             var msg = "<?=$_SESSION['msg']?>";
@@ -149,9 +149,14 @@
                                 <div>NOVO USUÁRIO</div>
                             </a>
                         </li>
-                        <li class="botao" style="background:#992fad;margin-right: 305px;">
+                        <li class="botao" style="background:#992fad;">
                             <a href="ConsultarUsuarios.php" class="link">
                                 <div>CONSULTAR OU ALTERAR USUÁRIOS</div>
+                            </a>
+                        </li>
+                        <li class="botao" style="background:#decf1b;margin-right: 207px;">
+                            <a href="Graficos.php" class="link">
+                                <div>GRÁFICOS</div>
                             </a>
                         </li>
                         <li class="botao" style="background: green;">
