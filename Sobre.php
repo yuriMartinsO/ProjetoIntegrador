@@ -189,7 +189,17 @@
             <div>SOBRE NÓS</div>
         </div>
         <div class="formulario">
-            
+        <p>Somos uma equipe universit&aacute;ria da Campo Salles. Nosso prop&oacute;sito neste projeto visa a participa&ccedil;&atilde;o do projeto integrador<br /><br />Integrantes:</p>
+        <p>Yuri Martins de Oliveira Ogawa<br />Tommy Erik De Freitas<br />Fernando Jardim Novais<br />Melquisedeque Flor&ecirc;ncio da Silva Filho<br />Michael oliveira da Silva<br /><br />contato:</p>
+        <div>
+        <ul>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yuri.olivera@hotmail.com</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tommy_freitas@hotmail.com</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fernandojn2@gmail.com</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;melqui.f.filho@gmail.com</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maicomxoliveira1@gmail.com</li>
+        </ul>
+        </div>
         </div>
     </body>
 </html>
