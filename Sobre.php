@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="titulo-bloco">
-            <div>SOBRE NÓS</div>
+            <div>SOBRE NÓS!</div>
         </div>
         <div class="formulario">
         <p>Somos uma equipe universit&aacute;ria da Campo Salles. Nosso prop&oacute;sito neste projeto visa a participa&ccedil;&atilde;o do projeto integrador<br /><br />Integrantes:</p>
