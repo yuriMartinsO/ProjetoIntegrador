@@ -189,7 +189,16 @@
             <div>TERMOS DE USO</div>
         </div>
         <div class="formulario">
-            
+        <p><strong>Termos de uso e responsabilidades </strong></p>
+        <p>Nesse sistema o usu&aacute;rio ir&aacute; conseguir se cadastrar e utilizarem todas as fun&ccedil;&otilde;es de suporte, por&eacute;m para isso ele vai precisar utilizar algumas diretrizes e dados b&aacute;sicos como Nome, E-mail, Telefone para cadastro de dados</p>
+        <ul>
+        <li>Cada usu&aacute;rio &eacute; respons&aacute;vel pelo cadastro e os dados ser&atilde;o usados apenas para uso do sistema</li>
+        <li>O usu&aacute;rio deve colocar os dados pessoais leg&iacute;veis para o cadastro , do qual depois do cadastro o usu&aacute;rio ir&aacute; precisar todas &agrave;s vezes para entrar no sistema com o Login e a senha efetuada no cadastro conforme o sistema est&aacute; pedindo.</li>
+        <li>Cada usu&aacute;rio tem direito apenas a um Cadastro para n&atilde;o haver diverso cadastro com a mesma pessoa</li>
+        <li>Quando necess&aacute;rio sistema precisa de atualiza&ccedil;&atilde;o podendendo ocorrer paradas tempor&aacute;rias</li>
+        <li>O sistema garante a seguran&ccedil;a dos dados pessoais do cadastro em sigilo</li>
+        <li>Verificar temporariamente o sistema para ver se n&atilde;o tem nenhum problema , caso obtenha, por favor entrar em contato</li>
+        </ul>
         </div>
     </body>
 </html>
